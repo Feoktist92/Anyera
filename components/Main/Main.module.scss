@@ -1,0 +1,63 @@
+.root {
+    background: url('./background.png') 50% / cover no-repeat;
+    padding: 90px 40px 170px 50px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: calc(100vh - 255px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    row-gap: 40px;
+    font-family: 'Cera PRO Regular', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.top {
+    font-size: 18px;
+}
+.bottom {
+    font-size: 24px;
+}
+.h1 {
+    width: 100%;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+@media (max-width: 768px) {
+    .root {
+        padding-top: 140px;
+        padding-bottom: 295px;
+    }
+    .h1 {
+        font-size: 60px;
+    }
+    .title {
+        row-gap: 25px;
+        margin-bottom: 52px;
+    }
+}
+@media (max-width: 580px) {
+    .h1 {
+        font-size: 48px;
+    }
+}
+@media (max-width: 390px) {
+    .root {
+        padding: 60px 15px 180px;
+    }
+    .h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

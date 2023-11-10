@@ -1,0 +1,31 @@
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    grid-template-columns: 1fr auto;
+    display: grid;
+    padding: 30px 40px;
+    @media (max-width: 580px) {
+        padding: 20px 15px;
+    }
+    @media (max-width: 380px) {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(106, 26, 0, 0.3);
+    z-index: 9999; /* Высокое значение z-index */
+    display: none;
+    cursor: pointer; /* Добавьте эту строку, чтобы можно было закрыть модальное окно кликом на фон */
+}
+
+.overlay.active {
+    display: block;
+}

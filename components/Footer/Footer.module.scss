@@ -1,0 +1,70 @@
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 75px auto;
+    @media (max-width: 768px) {
+        padding: 40px 20px;
+    }
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 390px) {
+        padding: 30px 15px;
+    }
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    @media (max-width: 580px) {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        row-gap: 8px;
+    }
+}
+.text {
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    @media (max-width: 390px) {
+        font-size: 12px;
+    }
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+    @media (max-width: 580px) {
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.links {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+.links {
+    svg:hover {
+        fill: rgb(232, 56, 1);
+    }
+}
+.politics {
+    color: #383838;
+    font-size: 14px;
+    line-height: 16px;
+    transition: all 0.2s ease-in;
+    @media (max-width: 390px) {
+        font-size: 12px;
+    }
+}
+.politics:hover {
+    color: rgb(232, 56, 1);
+}
