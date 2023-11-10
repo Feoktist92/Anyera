@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /private
+
+sitemap: https://anyera.vercel.app/sitemap.xml
+host: https://anyera.vercel.app/
