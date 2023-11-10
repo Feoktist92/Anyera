@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'DRIVERAVE',
     description: 'Аренда жилья и автомобилей от владельцев',
     icons: {
-        icon: '/favicon.ico',
+        icon: './favicon.ico',
     },
 };
 
