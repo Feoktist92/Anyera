@@ -4,7 +4,13 @@ import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Head from 'next/head';
 
-export const metadata: Metadata = {};
+export const metadata: Metadata = {
+    title: 'DRIVERAVE',
+    description: 'Аренда жилья и автомобилей от владельцев',
+    icons: {
+        icon: '/favicon.ico',
+    },
+};
 
 export default function RootLayout({
     children,
