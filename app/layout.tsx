@@ -7,9 +7,6 @@ import Head from 'next/head';
 export const metadata: Metadata = {
     title: 'DRIVERAVE',
     description: 'Аренда жилья и автомобилей от владельцев',
-    icons: {
-        icon: '../app/favicon.ico',
-    },
 };
 
 export default function RootLayout({
