@@ -1,22 +1,37 @@
+import { Metadata } from 'next';
 import './globals.css';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Head from 'next/head';
 
-type Metadata = {
-    title: string;
-    description: string;
-    googlesiteVerification: string;
-    icon: string;
-};
-
 export const metadata: Metadata = {
     title: 'DRIVERAVE',
     description: 'Аренда жилья и автомобилей от владельцев',
-    googlesiteVerification: 'GiyDA7tYajhcN5A2OsSLFIa_cHbhYhkeH9cMvTwaih8',
-    icon: '../public/favicon.ico',
+    icons: {
+        icon: {
+            url: './favicon.ico',
+        },
+        shortcut: {
+            url: '../public/favicon.svg',
+        },
+    },
+    robots: {
+        index: false,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: false,
+            noimageindex: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+    verification: {
+        google: 'GiyDA7tYajhcN5A2OsSLFIa_cHbhYhkeH9cMvTwaih8',
+    },
 };
-
 export default function RootLayout({
     children,
 }: {
