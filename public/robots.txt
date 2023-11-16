@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /admin
-Disallow: /private
+Disallow: /api
+Sitemap: https://mytestblog.com/sitemap.xml
 
 sitemap: https://anyera.vercel.app/sitemap.xml
 host: https://anyera.vercel.app/
